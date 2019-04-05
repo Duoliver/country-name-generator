@@ -42,7 +42,7 @@ function twoSyllable(name){
         case 0: case 1: case 2: return vowel + newConsonant(); 
         case 3: case 4: case 5: return newConsonant() + vowel;
         case 6: return vowel + newVowel(vowel); //generates another vowel
-        default: console.log("TwoSyllable: DEFAULT (this shouldn't have happend")
+        default: console.log("TwoSyllable: DEFAULT (this shouldn't have happend)");
     }
 }
 
@@ -79,17 +79,27 @@ function generateName(){
     console.log(syllables);
     return format(name);
 }
+
+function listNames(limit){
+    var list = ""
+    for(var i = 0; i < limit; i++){
+        list += "<li>"+generateName()+"</li> ";
+    }
+    document.getElementById("lista").innerHTML = list;
+}
 /*
 $("#generate").click(function(){
     
 });
 */
+$(function(){
+    listNames(10);
+    $("#generate").click(function(){
+        listNames(10);
+    });
+});
 
-var list = ""
-    for(var i = 0; i < 10; i++){
-        list += "<li>"+generateName()+"</li> ";
-    }
-    document.getElementById("lista").innerHTML = list;
+
 /*
 function generateName(){
     for(var i = 0; i < 10; i++){ //generates ten words
