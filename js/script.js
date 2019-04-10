@@ -94,7 +94,8 @@ function listNames(limit){
     document.getElementById("list_generated").innerHTML = "";
     for(var i = 0; i < limit; i++){
         name = generateName();
-        document.getElementById("list_generated").innerHTML += '<li class="country">'+name+'</li>';
+        document.getElementById("list_generated").innerHTML += 
+            '<li class="country">'+name+'</li>'; //can use .append("#list_generated") from jQuery instead (e.g appendChild)
         list[i] = name;
     }
     return list;
@@ -107,7 +108,7 @@ $(function(){
         list = listNames(10);
         console.log(list);
     });
-    $(".country").click(function(){ // does not work properly
+    $(document.body).on('click', '.country', function(){
         console.log("SaveName: Going to save the name");
         var index = $(".country").index(this);
         console.log("SaveName: Name saved");
