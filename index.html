@@ -3,24 +3,48 @@
     <head>
         <meta charset="utf-8">
         <title>Country Name Generator</title>
-        <!--<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Country Name Generator</h1>
-        <p>still on development</p>
-        <hr>
-        <br />
-        <h2>Generated Names</h2>
-        <ol id="list_generated"></ol>
+        <header>
+            <h6>Honeysalad's</h6>
+            <h1>Country Name Generator</h1>
+        </header>
+        <div class="section">
+            <div class="main">
+                <div class="title">
+                    <h2>The Generator</h2>
+                    <p>Click on "Generate" to see more names</p>
+                </div>
+                
+                <div class="container generator">
+                    <div class="container list">
+                        <ul id="list_generated">
 
-        <button id="generate">Generate</button>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-primary" id="generate">Generate</button>
+                    </div>
+                </div>
 
-        <h2>Saved Names</h2>
-        <p>Click on a name to save it</p>
+                <div class="title">
+                    <h2>Saved Names</h2>
+                    <p>Click over a name to save it in the box below</p>
+                </div>
 
-        <ul id="list_saved"></ul>
+                <div class="container saved">
+                    <ul id="list_saved"></ul>
+                </div>
+            </div>
+        </div>
+        <footer>
 
+        </footer>
+        
         <script src="lib/jquery/jquery-3.3.1.min.js"></script>
         <script src="js/script.js"></script>
+
     </body>
 </html>

@@ -1,4 +1,76 @@
-.country{
-    background: none;
-    border: none;
+html{
+    color: #30336b;
+}
+
+header{
+    background-color: #6ab04c;   
+    padding: 0.5em;
+}
+
+.container{
+    border: 1px solid #668;
+    border-radius: 10px;
+}
+
+.section{
+    height: 1000px;
+    background-color: #badc58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    height: 900px;
+    width: 700px;
+}
+
+.title{
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.generator, .list, .saved{
+    border-radius: 20px;
+}
+.generator{
+    height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: #c7ecee;
+}
+
+.list{
+    height: 300px;
+    width: 210px;
+    margin: 20px auto;
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #535c68;
+    color: #f6e58d;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.list ul{
+    padding: 0;
+    margin: auto;
+    list-style: none;
+}
+
+.button{
+    text-align: center;
+}
+
+.saved{
+    margin: 0 auto;
+    width: 600px;
+    height: 150px;
+    background-color: #95afc0;
+    overflow-y: scroll;
+}
+
+.saved ul{
+    display: inline-block;
 }
